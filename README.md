@@ -23,6 +23,6 @@ The reporting tool in action:
 
 ## Try it out!
 
-(https://caterinamennito.github.io/Hackaton_BeCentral/New%20test%20version%20with%20pict/business.html)
+https://caterinamennito.github.io/Hackaton_BeCentral/New%20test%20version%20with%20pict/business.html
 
 
