@@ -13,3 +13,11 @@ Create a User-friendly Reporting tool for flagging Single Market obstacles
 - Jean-Philippe Scheppers 
 
 ## Preview of the Reporting tool
+
+The reporting tool integrated in the original EU website:
+![preview](https://github.com/caterinamennito/Hackaton_BeCentral/blob/master/hackaton2.png)
+
+The reporting tool in action:
+
+![preview](https://github.com/caterinamennito/Hackaton_BeCentral/blob/master/Hackaton.png)
+
