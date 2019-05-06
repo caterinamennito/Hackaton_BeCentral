@@ -1,0 +1,11 @@
+1 OBSTACLES - Reporting tool for flagging Single Market obstacles
+- user friendly
+- anonymous
+- collects aggregated information (the subject matter of requests and responses)
+- also collects info from assistance services included in the future gateway
+- easily & meaningfully vizualize collected info (proposal: pie charts showing top level categories issues (e.g. A, B, C.), clickable to access a sublevel of categories for each top category (e.g. A1, A2, A3).
+- info flows one way / no feedback | challenge: how to make it attractive for the users?
+
+2 QUALITY - Feedback mechanism on information and service quality
+- quickly and anonymously comment on the quality and availability of the information they receive 
+- the tool should fit for both the EU and national public services, which link up with the gateway and be able to aggregate information. 

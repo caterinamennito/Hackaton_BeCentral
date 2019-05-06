@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Obstacles report tool</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/css/mdb.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/scripts.js"></script>
+
+</head>
+<body>
+    <form id="regForm" action="">
+
+        <p><span class="nav" id="mainSection" tar=''></span><span class="nav" id="subSection"></span><span class="nav" id="subSection2"></span></p>
+
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab" id="mainCategory">
+            <p class="question">Hello, are you a:</p>
+            <p class="answer"><input type="radio" name="mainCategory" value="citizen" oninput="this.className = ''">Citizen</p>
+            <p class="answer"><input type="radio" name="mainCategory" value="business" oninput="this.className = ''">Business</p>
+            <div id="eurobotAssistantDiv">
+                <img id="eurobotAssistant" src="./img/eurobot_assistant.png" alt="eurobot assistant" width="250px">
+            </div>
+
+        </div>
+
+        <div class="tab background" id="citizen"><p class="questionStyle" >Your problem concerns:</p>
+            <p><input type="radio" name="citizen" value="travel" oninput="this.className = ''">Travel</p>
+            <p><input type="radio" name="citizen" value="workRetirement" oninput="this.className = ''">Work & Retirement</p>
+            <p><input type="radio" name="citizen" value="vehicles" oninput="this.className = ''">Vehicles</p>
+            <p><input type="radio" name="citizen" value="residence" oninput="this.className = ''">Residence formalities</p>
+            <p><input type="radio" name="citizen" value="educationYouth" oninput="this.className = ''">Education & Youth</p>
+            <p><input type="radio" name="citizen" value="health" oninput="this.className = ''">Health</p>
+            <p><input type="radio" name="citizen" value="family" oninput="this.className = ''">Family</p>
+            <p><input type="radio" name="citizen" value="consumers" oninput="this.className = ''">Consumers</p>
+        </div>
+
+        <div class="tab" id="business"><p class="questionStyle">Your problem concerns:</p>
+            <p><input type="radio" name="business" value="runningBusiness" oninput="this.className = ''">Running a business</p>
+            <p><input type="radio" name="business" value="taxation" oninput="this.className = ''">Taxation</p>
+            <p><input type="radio" name="business" value="sellingEu" oninput="this.className = ''">Selling in the EU</p>
+            <p><input type="radio" name="business" value="humanRessources" oninput="this.className = ''">Human resources</p>
+            <p><input type="radio" name="business" value="productRequirements" oninput="this.className = ''">Product requirements</p>
+            <p><input type="radio" name="business" value="financeFunding" oninput="this.className = ''">Finance and funding</p>
+            <p><input type="radio" name="business" value="dealingCustomers" oninput="this.className = ''">Dealing with customers</p>
+        </div>
+
+        <div class="tab" id="travel"><p class="questionStyle">Your problem concerns:</p>
+            <p><input type="radio" name="travel" value="documents" oninput="this.className = ''">Documents you need for travel in Europe</p>
+            <p><input type="radio" name="travel" value="passengerRights" oninput="this.className = ''">Passenger rights</p>
+            <p><input type="radio" name="travel" value="transportDisability" oninput="this.className = ''">Transport and disability</p>
+            <p><input type="radio" name="travel" value="drivingAbroad" oninput="this.className = ''">Driving abroad</p>
+            <p><input type="radio" name="travel" value="toTake" oninput="this.className = ''">What can you take with you?</p>
+            <p><input type="radio" name="travel" value="securityEmergencies" oninput="this.className = ''">Security and emergencies</p>
+            <p><input type="radio" name="travel" value="package" oninput="this.className = ''">Package travel and timeshare</p>
+        </div>
+
+        <div class="tab" id="workRetirement"><p class="questionStyle">Your problem concerns:</p>
+            <p><input type="radio" name="workRetirement" value="workingAbroad" oninput="this.className = ''">Working abroad</p>
+            <p><input type="radio" name="workRetirement" value="findingJobAbroad" oninput="this.className = ''">Finding a job abroad</p>
+            <p><input type="radio" name="workRetirement" value="professionalQualif" oninput="this.className = ''">Professional qualifications</p>
+            <p><input type="radio" name="workRetirement" value="unemploymentBenefits" oninput="this.className = ''">Unemployment & benefits</p>
+            <p><input type="radio" name="workRetirement" value="retiringAbroad" oninput="this.className = ''">Retiring abroad</p>
+            <p><input type="radio" name="workRetirement" value="taxes" oninput="this.className = ''">Taxes</p>
+        </div>
+
+        <div class="tab" id="vehicles"><p class="questionStyle">Your problem concerns:</p>
+            <p><input type="radio" name="vehicles" value="cars" oninput="this.className = ''">Cars</p>
+            <p><input type="radio" name="vehicles" value="drivingLicence" oninput="this.className = ''">Driving licence</p>
+            <p><input type="radio" name="vehicles" value="insurance" oninput="this.className = ''">Insurance</p>
+            <p><input type="radio" name="vehicles" value="registration" oninput="this.className = ''">Registration</p>
+        </div>
+
+        <div class="tab" id="residence"><p class="questionStyle">Your problem concerns:</p>
+            <p><input type="radio" name="residence" value="residenceRights" oninput="this.className = ''">Residence rights</p>
+            <p><input type="radio" name="residence" value="familyResidenceRights" oninput="this.className = ''">Family residence rights</p>
+            <p><input type="radio" name="residence" value="documentsFormalities" oninput="this.className = ''">Documents and formalities</p>
+            <p><input type="radio" name="residence" value="electionsAbroad" oninput="this.className = ''">Elections abroad</p>
+        </div>
+
+        <div class="tab" id="educationYouth"><p class="questionStyle">Your problem concerns:</p>
+            <p><input type="radio" name="educationYouth" value="school" oninput="this.className = ''">School</p>
+            <p><input type="radio" name="educationYouth" value="university" oninput="this.className = ''">University</p>
+            <p><input type="radio" name="educationYouth" value="traineeships" oninput="this.className = ''">Traineeships</p>
+            <p><input type="radio" name="educationYouth" value="researchers" oninput="this.className = ''">Researchers</p>
+            <p><input type="radio" name="educationYouth" value="volunteering" oninput="this.className = ''">Volunteering</p>
+        </div>
+
+        <div class="tab" id="health"><p class="questionStyle">Your problem concerns:</p>
+            <p><input type="radio" name="health" value="unplannedHealthcare" oninput="this.className = ''">Unplanned healthcare</p>
+            <p><input type="radio" name="health" value="plannedMedical" oninput="this.className = ''">Planned medical treatment abroad</p>
+            <p><input type="radio" name="health" value="prescriptionMedicine" oninput="this.className = ''">Getting prescription medicine abroad</p>
+            <p><input type="radio" name="health" value="whenLivingAbroad" oninput="this.className = ''">When living abroad</p>
+        </div>
+
+        <div class="tab" id="family"><p class="questionStyle">Your problem concerns:</p>
+            <p><input type="radio" name="family" value="children" oninput="this.className = ''">Children</p>
+            <p><input type="radio" name="family" value="couples" oninput="this.className = ''">Couples</p>
+            <p><input type="radio" name="family" value="inheritance" oninput="this.className = ''">Cross-border inheritance</p>
+        </div>
+
+        <div class="tab" id="consumers"><p class="questionStyle">Your problem concerns:</p>
+            <p><input type="radio" name="consumers" value="shopping" oninput="this.className = ''">Shopping</p>
+            <p><input type="radio" name="consumers" value="internetTelecoms" oninput="this.className = ''">Internet and telecoms</p>
+            <p><input type="radio" name="consumers" value="financialProductsServices" oninput="this.className = ''">Financial products and services</p>
+            <p><input type="radio" name="consumers" value="unfairTreatment" oninput="this.className = ''">Unfair treatment</p>
+            <p><input type="radio" name="consumers" value="energySupply" oninput="this.className = ''">Energy supply</p>
+            <p><input type="radio" name="consumers" value="consumerDispute" oninput="this.className = ''">Consumer dispute resolution</p>
+        </div>
+
+        <div class="tab" id="runningBusiness"><p class="questionStyle">A problem with your business ?</p>
+            <p><input type="radio" name="runningBusiness" value="intellectualProperty" oninput="this.className = ''">Intellectual property</p>
+            <p><input type="radio" name="runningBusiness" value="developingBusiness" oninput="this.className = ''">Developing a business</p>
+            <p><input type="radio" name="runningBusiness" value="competitionBusinesses" oninput="this.className = ''">Competition between businesses</p>
+        </div>
+
+        <div class="tab" id="taxation"><p class="questionStyle">A problem with taxation ?</p>
+            <p><input type="radio" name="taxation" value="exciseDuties" oninput="this.className = ''">Excise duties</p>
+            <p><input type="radio" name="taxation" value="vat" oninput="this.className = ''">VAT</p>
+            <p><input type="radio" name="taxation" value="businessTax" oninput="this.className = ''">Business tax</p>
+        </div>
+
+        <div class="tab" id="sellingEu"><p class="questionStyle">A problem with selling in the EU ?</p>
+            <p><input type="radio" name="sellingEu" value="publicContracts" oninput="this.className = ''">Public contracts</p>
+            <p><input type="radio" name="sellingEu" value="goodsServices" oninput="this.className = ''">Selling goods and services</p>
+            <p><input type="radio" name="sellingEu" value="competitionBusinesses" oninput="this.className = ''">Competition between businesses</p>
+        </div>
+
+        <div class="tab" id="humanRessources"><p class="questionStyle">Human resources problem ?</p>
+            <p><input type="radio" name="humanRessources" value="employementContracts" oninput="this.className = ''">Employement contracts</p>
+            <p><input type="radio" name="humanRessources" value="workingHours" oninput="this.className = ''">Working hours, holiday and leave</p>
+            <p><input type="radio" name="humanRessources" value="transportWorkers" oninput="this.className = ''">Transport sector workers</p>
+            <p><input type="radio" name="humanRessources" value="postedWorkers" oninput="this.className = ''">Posted workers</p>
+            <p><input type="radio" name="humanRessources" value="socialSecurity" oninput="this.className = ''">Social security and health</p>
+            <p><input type="radio" name="humanRessources" value="equalTreatment" oninput="this.className = ''">Equal treatment and qualifications</p>
+        </div>
+
+        <div class="tab" id="productRequirements"><p class="questionStyle">Products requirements ?</p>
+            <p><input type="radio" name="productRequirements" value="ceMarking" oninput="this.className = ''">CE marking</p>
+            <p><input type="radio" name="productRequirements" value="standardsEurope" oninput="this.className = ''">Standards in Europe</p>
+            <p><input type="radio" name="productRequirements" value="rulesSpecifications" oninput="this.className = ''">Product rules and specifications</p>
+            <p><input type="radio" name="productRequirements" value="chemicals" oninput="this.className = ''">Chemicals (REACH)</p>
+            <p><input type="radio" name="productRequirements" value="labellingPackaging" oninput="this.className = ''">Classification, labelling, packaging</p>
+            <p><input type="radio" name="productRequirements" value="energyLabels" oninput="this.className = ''">Energy labels</p>
+            <p><input type="radio" name="productRequirements" value="ecoDesign" oninput="this.className = ''">Eco-design requirements</p>
+            <p><input type="radio" name="productRequirements" value="ecolabel" oninput="this.className = ''">EU Ecolabel</p>
+        </div>
+
+        <div class="tab" id="financeFunding"><p class="questionStyle">A problem with funding ?</p>
+            <p><input type="radio" name="financeFunding" value="accounting" oninput="this.className = ''">Accounting</p>
+            <p><input type="radio" name="financeFunding" value="makingPayements" oninput="this.className = ''">Making and receiving payements</p>
+            <p><input type="radio" name="financeFunding" value="gettingFunding" oninput="this.className = ''">Getting funding</p>
+        </div>
+
+        <div class="tab" id="dealingCustomers"><p class="questionStyle">Dealing with customer ?</p>
+            <p><input type="radio" name="dealingCustomers" value="contractGuarantees" oninput="this.className = ''">Consumer contracts and guarantees</p>
+            <p><input type="radio" name="dealingCustomers" value="disputesCustomers" oninput="this.className = ''">Solving disputes with customers</p>
+            <p><input type="radio" name="dealingCustomers" value="dataProtection" oninput="this.className = ''">Data protection</p>
+        </div>
+
+        <div id="message">
+          <p class="questionStyle">Leave us a message</p>
+            <textarea name ="message" placeholder="Which kind of problem did you encounter?"></textarea>
+            <button id="submit" type="submit">Send</button>
+        </div>
+
+        <div id="msgSend"><p>Thank you, your message has been sent</p></div>
+
+    </form>
+
+</body>
+</html>

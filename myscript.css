@@ -1,0 +1,34 @@
+/*HERE WE COME!!*/
+#magicButton{
+	position: fixed;
+	bottom:20px;
+ right: 40px;
+ width: 200px;
+ height: 80px;
+ background-color: #FFD617;
+ font: inherit;
+ font-size: 20px;
+}
+
+#iframeContainer {
+	position: absolute;
+	z-index: 2;
+ padding-left: 600px;
+ padding-top: 250px;
+ padding-bottom: 650px;
+	left: -2000px;
+	transition: 0.8s;
+	width: 1236px;
+background-color:rgba(0,0,0,0.7);
+border: 1px solid #004494;
+
+}
+
+#obstacleForm {
+width: 700px;
+position: relative;
+border: 4px solid  #004494;
+border-radius: 5px;
+}
+
+/*OFF WE GO*/
